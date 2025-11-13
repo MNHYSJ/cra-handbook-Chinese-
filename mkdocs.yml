@@ -1,0 +1,71 @@
+site_name: CRA Handbook
+site_description: 个人CRA临床试验工作手册
+site_author: Yuyang
+site_url: ""
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - navigation.instant
+    - navigation.instant.preview
+
+nav:
+  - 首页: index.md
+  - 入职与基础:
+    - CRA角色与日常: basics/role-of-cra.md
+    - 临床试验基本概念: basics/trial-basics.md
+  - 项目启动（Start-up）:
+    - 总览与时间线: startup/overview.md
+    - 选点（Site Selection）: startup/site-selection.md
+  - 伦理 & 注册:
+    - 伦理提交清单: ethics/ec-checklist.md
+    - 试验注册要点: ethics/trial-registration.md
+  - 中心管理 & 沟通:
+    - 与PI/CRC合作: site-management/pi-crc-communication.md
+  - 监查访视:
+    - SIV启动访视: monitoring/siv.md
+    - IMV常规访视: monitoring/imv.md
+    - Close-out结束访视: monitoring/closeout.md
+  - 安全性事件:
+    - AE/SAE定义速查: safety/ae-sae-definitions.md
+    - SAE上报流程: safety/sae-reporting.md
+  - TMF/ISF文件管理:
+    - 文件结构: documents/tmf-structure.md
+    - 常见问题: documents/common-issues.md
+  - 数据 & 稽查:
+    - Query处理: data/query-handling.md
+    - 稽查准备: data/audit-prep.md
+  - 常用表单 & 模板:
+    - 监查访视模板: templates/monitoring-visit-templates.md
+  - 医疗器械核心文件（SOP / Protocol / CRF）:
+    - SOP 编写指南: device-docs/sop/overview.md
+    - SOP 常用模板: device-docs/sop/sop-templates.md
+    - 医疗器械常见 SOP 清单: device-docs/sop/device-sop-list.md
+    - Protocol 编写指南（ISO 14155）: device-docs/protocol/protocol-guide.md
+    - Protocol 模板与示例: device-docs/protocol/protocol-template.md
+    - CRF 设计原则: device-docs/crf/crf-principles.md
+    - CRF 模板与示例: device-docs/crf/crf-template.md
+    - CRF 与 Protocol 对照表: device-docs/crf/protocol-crf-mapping.md
+  - 术语 / 法规速查:
+    - 中英缩写表: reference/glossary.md
+  - 个人经验 & 小技巧:
+    - 沟通小技巧: tips/communication.md
+    - 踩坑记录: tips/pitfalls.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
