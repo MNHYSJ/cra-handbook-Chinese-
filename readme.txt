@@ -4,3 +4,10 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 运行：
 mkdocs serve
+
+
+更新：
+git add .
+git commit -m "update something"
+git push
+mkdocs gh-deploy
